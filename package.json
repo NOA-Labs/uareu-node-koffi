@@ -1,36 +1,16 @@
 {
-  "name": "uareu-node",
-  "version": "1.0.5",
-  "description": "A nodejs library to communicate with DigitalPersona 4500 biometric.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "start:dev": "ts-node src/index.ts",
-    "test": "jest --config jest.config.js",
-    "build": "tsc",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "prepare": "npm run build",
-    "preversion": "npm run lint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lucasfelipecdm/uareu-node.git"
-  },
-  "keywords": [
-    "uareu",
-    "biometric",
-    "digitalpersona",
-    "fingerprint",
-    "uareu 4500"
-  ],
   "author": "Lucas Felipe Costa da Mata",
-  "license": "ISC",
+  "dependencies": {
+    "ffi-napi": "github:2060-io/node-ffi-napi",
+    "ref-array-di": "^1.2.2",
+    "ref-napi": "^3.0.3",
+    "ref-struct-di": "^1.1.1"
+  },
+  "description": "A nodejs library to communicate with DigitalPersona 4500 biometric.",
   "devDependencies": {
     "@microsoft/tsdoc": "^0.12.20",
     "@types/jest": "^25.2.1",
+    "@types/ref-napi": "^3.0.4",
     "@types/ref-struct-di": "^1.1.4",
     "@typescript-eslint/eslint-plugin": "^2.28.0",
     "@typescript-eslint/parser": "^2.28.0",
@@ -44,12 +24,31 @@
     "typedoc": "^0.17.7",
     "typescript": "^5.5.4"
   },
-  "dependencies": {
-    "@2060.io/ffi-napi": "github:2060-io/node-ffi-napi",
-    "@types/ffi-napi": "^4.0.10",
-    "@types/ref-napi": "^3.0.4",
-    "ref-array-di": "^1.2.2",
-    "ref-napi": "^3.0.3",
-    "ref-struct-di": "^1.1.1"
-  }
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "uareu",
+    "biometric",
+    "digitalpersona",
+    "fingerprint",
+    "uareu 4500"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "uareu-node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfelipecdm/uareu-node.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "start:dev": "ts-node src/index.ts",
+    "test": "jest --config jest.config.js"
+  },
+  "types": "dist/index.d.ts",
+  "version": "1.0.5"
 }
