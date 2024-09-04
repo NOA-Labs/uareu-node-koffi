@@ -1,4 +1,4 @@
-import * as ffi from 'ffi-napi';
+import * as ffi from '@2060.io/ffi-napi';
 import * as ArrayType from 'ref-array-di';
 import * as ref from 'ref-napi';
 import DllHandler from "./handlers/dll/dll.handler";

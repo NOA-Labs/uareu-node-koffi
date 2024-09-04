@@ -1,7 +1,7 @@
 {
   "author": "Lucas Felipe Costa da Mata",
   "dependencies": {
-    "ffi-napi": "github:2060-io/node-ffi-napi",
+    "@2060.io/ffi-napi": "github:2060-io/node-ffi-napi",
     "ref-array-di": "^1.2.2",
     "ref-napi": "^3.0.3",
     "ref-struct-di": "^1.1.1"
